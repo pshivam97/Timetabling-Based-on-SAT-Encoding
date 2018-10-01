@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>to-submit</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>to-submit-v2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11773,7 +11773,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[148]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ! export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/workspace/z3-4.7.1-x64-debian-8.10/bin</span>
@@ -11787,7 +11787,22 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Starting time</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">start_time_of_program</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[150]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing libraries</span>
@@ -11803,7 +11818,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[151]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing input file</span>
@@ -11819,7 +11834,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[152]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Viewing input dictionary</span>
@@ -11897,7 +11912,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[153]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Type to Room Dictionary</span>
@@ -11919,7 +11934,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[153]:</div>
 
 
 
@@ -11941,7 +11956,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[154]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List of room and dictionary from room to its index</span>
@@ -11967,8 +11982,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;LH1&#39;, &#39;LH2&#39;, &#39;ground&#39;, &#39;physics lab&#39;, &#39;T1&#39;, &#39;T2&#39;, &#39;T3&#39;, &#39;computer lab&#39;, &#39;Chemistry lab&#39;]
-{&#39;physics lab&#39;: 3, &#39;T3&#39;: 6, &#39;ground&#39;: 2, &#39;LH2&#39;: 1, &#39;T2&#39;: 5, &#39;computer lab&#39;: 7, &#39;Chemistry lab&#39;: 8, &#39;LH1&#39;: 0, &#39;T1&#39;: 4}
+<pre>[&#39;ground&#39;, &#39;computer lab&#39;, &#39;Chemistry lab&#39;, &#39;T1&#39;, &#39;T2&#39;, &#39;T3&#39;, &#39;physics lab&#39;, &#39;LH1&#39;, &#39;LH2&#39;]
+{&#39;Chemistry lab&#39;: 2, &#39;T3&#39;: 5, &#39;physics lab&#39;: 6, &#39;T2&#39;: 4, &#39;ground&#39;: 0, &#39;LH1&#39;: 7, &#39;T1&#39;: 3, &#39;computer lab&#39;: 1, &#39;LH2&#39;: 8}
 </pre>
 </div>
 </div>
@@ -11979,7 +11994,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[155]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Days and periods</span>
@@ -12034,7 +12049,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[156]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># faculty list</span>
@@ -12063,8 +12078,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Somenath\xa0Biswas&#39;, &#39;Lok\xa0Pati\xa0Tripathi&#39;, &#39;Rishikesh\xa0Narayan&#39;, &#39;E. Siva\xa0Subramaniam\xa0I.&#39;, &#39;Amaldev\xa0Manuel&#39;, &#39;Nida Sajid&#39;, &#39;Sreejith\xa0A.V.&#39;, &#39;Ramnath Kini&#39;, &#39;Sujit Sahoo&#39;, &#39;Sharad\xa0Sinha&#39;, &#39;Sabiha\xa0Hashami&#39;, &#39;Basanta\xa0Nandi&#39;, &#39;Santosh\xa0Upadhyay&#39;, &#39;E.\xa0Siva\xa0Subramaniam\xa0I.&#39;, &#39;Clint\xa0P.\xa0George&#39;, &#39;Sunil Paul&#39;, &#39;T.\xa0S.\xa0Rathore&#39;]
-{&#39;Somenath\xa0Biswas&#39;: 0, &#39;Lok\xa0Pati\xa0Tripathi&#39;: 1, &#39;Rishikesh\xa0Narayan&#39;: 2, &#39;Amaldev\xa0Manuel&#39;: 4, &#39;Nida Sajid&#39;: 5, &#39;Clint\xa0P.\xa0George&#39;: 14, &#39;Sabiha\xa0Hashami&#39;: 10, &#39;Basanta\xa0Nandi&#39;: 11, &#39;E. Siva\xa0Subramaniam\xa0I.&#39;: 3, &#39;Santosh\xa0Upadhyay&#39;: 12, &#39;Sharad\xa0Sinha&#39;: 9, &#39;T.\xa0S.\xa0Rathore&#39;: 16, &#39;Sunil Paul&#39;: 15, &#39;Ramnath Kini&#39;: 7, &#39;Sujit Sahoo&#39;: 8, &#39;Sreejith\xa0A.V.&#39;: 6, &#39;E.\xa0Siva\xa0Subramaniam\xa0I.&#39;: 13}
+<pre>[&#39;T.\xa0S.\xa0Rathore&#39;, &#39;Lok\xa0Pati\xa0Tripathi&#39;, &#39;Amaldev\xa0Manuel&#39;, &#39;Sabiha\xa0Hashami&#39;, &#39;E.\xa0Siva\xa0Subramaniam\xa0I.&#39;, &#39;Rishikesh\xa0Narayan&#39;, &#39;Sunil Paul&#39;, &#39;Ramnath Kini&#39;, &#39;Nida Sajid&#39;, &#39;Sujit Sahoo&#39;, &#39;Sreejith\xa0A.V.&#39;, &#39;Sharad\xa0Sinha&#39;, &#39;Somenath\xa0Biswas&#39;, &#39;E. Siva\xa0Subramaniam\xa0I.&#39;, &#39;Clint\xa0P.\xa0George&#39;, &#39;Santosh\xa0Upadhyay&#39;, &#39;Basanta\xa0Nandi&#39;]
+{&#39;Lok\xa0Pati\xa0Tripathi&#39;: 1, &#39;Amaldev\xa0Manuel&#39;: 2, &#39;E.\xa0Siva\xa0Subramaniam\xa0I.&#39;: 4, &#39;Rishikesh\xa0Narayan&#39;: 5, &#39;Sunil Paul&#39;: 6, &#39;Ramnath Kini&#39;: 7, &#39;Nida Sajid&#39;: 8, &#39;Sabiha\xa0Hashami&#39;: 3, &#39;Santosh\xa0Upadhyay&#39;: 15, &#39;Sreejith\xa0A.V.&#39;: 10, &#39;Sharad\xa0Sinha&#39;: 11, &#39;Basanta\xa0Nandi&#39;: 16, &#39;Somenath\xa0Biswas&#39;: 12, &#39;Clint\xa0P.\xa0George&#39;: 14, &#39;E. Siva\xa0Subramaniam\xa0I.&#39;: 13, &#39;T.\xa0S.\xa0Rathore&#39;: 0, &#39;Sujit Sahoo&#39;: 9}
 </pre>
 </div>
 </div>
@@ -12075,7 +12090,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[157]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># batch list</span>
@@ -12112,7 +12127,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[158]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Course list</span>
@@ -12145,7 +12160,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[159]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here we are taking only first faculty in the list and we will write the codition on other faculties of the course later</span>
@@ -12154,12 +12169,11 @@ div#notebook {
 <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">course_list</span><span class="p">)):</span>
     <span class="c1"># Getting number of lecture slots</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">course_list</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">faculty_list_tmp</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="mi">3</span><span class="p">][:</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">faculty_name_tmp</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">g</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="mi">4</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">faculty</span> <span class="ow">in</span> <span class="n">faculty_list_tmp</span><span class="p">:</span>
-        <span class="n">t</span> <span class="o">=</span> <span class="n">faculty_to_index</span><span class="p">[</span><span class="n">faculty</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">ni</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-            <span class="n">tsgn</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">ni</span><span class="p">))</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">faculty_to_index</span><span class="p">[</span><span class="n">faculty_name_tmp</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">ni</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">tsgn</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">ni</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tsgn</span><span class="p">)</span>
 </pre></div>
 
@@ -12177,7 +12191,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[(1, 0, 1, 1), (1, 0, 1, 2), (1, 0, 1, 3), (1, 0, 1, 4), (11, 1, 1, 1), (11, 1, 1, 2), (11, 1, 1, 3), (3, 2, 1, 1), (3, 2, 1, 2), (3, 2, 1, 3), (13, 3, 1, 1), (13, 3, 1, 2), (13, 3, 1, 3), (13, 4, 1, 1), (13, 4, 1, 2), (0, 5, 1, 1), (0, 5, 1, 2), (0, 5, 1, 3), (12, 6, 1, 1), (12, 6, 1, 2), (5, 7, 1, 1), (5, 7, 1, 2), (4, 8, 2, 1), (4, 8, 2, 2), (4, 8, 2, 3), (15, 9, 2, 1), (15, 9, 2, 2), (16, 10, 2, 1), (16, 10, 2, 2), (8, 11, 2, 1), (8, 11, 2, 2), (4, 12, 2, 1), (9, 13, 3, 1), (9, 13, 3, 2), (9, 13, 3, 3), (9, 14, 3, 1), (14, 15, 3, 1), (14, 15, 3, 2), (14, 15, 3, 3), (14, 16, 3, 1), (6, 17, 3, 1), (6, 17, 3, 2), (6, 17, 3, 3), (10, 18, 3, 1), (10, 18, 3, 2)]
+<pre>[(1, 0, 1, 1), (1, 0, 1, 2), (1, 0, 1, 3), (1, 0, 1, 4), (16, 1, 1, 1), (16, 1, 1, 2), (16, 1, 1, 3), (13, 2, 1, 1), (13, 2, 1, 2), (13, 2, 1, 3), (4, 3, 1, 1), (4, 3, 1, 2), (4, 3, 1, 3), (4, 4, 1, 1), (4, 4, 1, 2), (12, 5, 1, 1), (12, 5, 1, 2), (12, 5, 1, 3), (15, 6, 1, 1), (15, 6, 1, 2), (8, 7, 1, 1), (8, 7, 1, 2), (2, 8, 2, 1), (2, 8, 2, 2), (2, 8, 2, 3), (6, 9, 2, 1), (6, 9, 2, 2), (0, 10, 2, 1), (0, 10, 2, 2), (9, 11, 2, 1), (9, 11, 2, 2), (2, 12, 2, 1), (11, 13, 3, 1), (11, 13, 3, 2), (11, 13, 3, 3), (11, 14, 3, 1), (14, 15, 3, 1), (14, 15, 3, 2), (14, 15, 3, 3), (14, 16, 3, 1), (10, 17, 3, 1), (10, 17, 3, 2), (10, 17, 3, 3), (3, 18, 3, 1), (3, 18, 3, 2)]
 </pre>
 </div>
 </div>
@@ -12188,7 +12202,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[160]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">course_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
@@ -12204,7 +12218,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[160]:</div>
 
 
 
@@ -12221,7 +12235,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[161]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This function takes a tuple of (t,s,g,n) and gives n * .5 , where &#39;n&#39; hours is the duration of class associated with this tsgn</span>
@@ -12240,7 +12254,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[162]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">duration</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
@@ -12271,7 +12285,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[163]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This function will take index of a faculty and return a list containing indices of courses which are being taught</span>
@@ -12279,11 +12293,9 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">lessons_t</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">faculty_name</span> <span class="o">=</span> <span class="n">faculty_list</span><span class="p">[</span><span class="n">t</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">course_list</span><span class="p">)):</span>
-        <span class="n">faculty_list_of_s</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">faculty_name</span> <span class="ow">in</span> <span class="n">faculty_list_of_s</span><span class="p">:</span>
-            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">t</span><span class="p">):</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 
@@ -12294,7 +12306,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[164]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lessons_t</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
@@ -12314,7 +12326,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0]
+<pre>[(1, 0, 1, 1), (1, 0, 1, 2), (1, 0, 1, 3), (1, 0, 1, 4)]
 </pre>
 </div>
 </div>
@@ -12325,7 +12337,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[165]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This function will take a batch and return a list containing indices of courses which are being taught</span>
@@ -12333,9 +12345,9 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">lessons_g</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">course_list</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="n">batch_list</span><span class="p">[</span><span class="n">g</span><span class="p">]</span> <span class="o">==</span> <span class="n">course_list</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="mi">4</span><span class="p">]</span> <span class="p">:</span>
-            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">g</span><span class="p">):</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 
@@ -12346,10 +12358,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[166]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lessons_g</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lessons_g</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -12366,7 +12378,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[8, 9, 10, 11, 12]
+<pre>[(2, 8, 2, 1), (2, 8, 2, 2), (2, 8, 2, 3), (6, 9, 2, 1), (6, 9, 2, 2), (0, 10, 2, 1), (0, 10, 2, 2), (9, 11, 2, 1), (9, 11, 2, 2), (2, 12, 2, 1)]
 </pre>
 </div>
 </div>
@@ -12377,7 +12389,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[167]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Some short-hands :-</span>
@@ -12392,7 +12404,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[168]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span> <span class="c1"># Proposition Dictionary</span>
@@ -12411,7 +12423,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[169]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V1.2</span>
@@ -12429,7 +12441,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[170]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C1.1</span>
@@ -12437,8 +12449,8 @@ div#notebook {
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">p1</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">)),</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">-</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span> 
+            <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span><span class="mi">1</span> <span class="o">+</span> <span class="n">p1</span> <span class="o">+</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-                <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span>
                 <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p2</span><span class="p">)</span>
                 <span class="n">constraint_1_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_1_1</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">],</span> <span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">]))</span>
 </pre></div>
@@ -12450,7 +12462,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[171]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C1.2</span>
@@ -12475,7 +12487,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[172]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V2.1</span>
@@ -12492,16 +12504,16 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[173]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C2.1</span>
 <span class="n">constraint_2_1</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
+        <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">):</span> 
             <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-            <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
             <span class="n">constraint_2_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_2_1</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">],</span> <span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">]))</span>
 </pre></div>
 
@@ -12512,7 +12524,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[174]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C2.2</span>
@@ -12536,16 +12548,16 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[175]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C2.3</span>
 <span class="n">constraint_2_3</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
+        <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">)),</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">-</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
             <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-            <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
             <span class="n">constraint_2_3</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_2_3</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">],</span> <span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">]))</span>
 </pre></div>
 
@@ -12556,7 +12568,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[176]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C2.4</span>
@@ -12580,7 +12592,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[177]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V3.1</span>
@@ -12598,7 +12610,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[178]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C3.1</span>
@@ -12618,7 +12630,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C3.2</span>
@@ -12630,7 +12642,7 @@ div#notebook {
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">):</span> 
             <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_false</span><span class="p">)</span>
             <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tsgn</span> <span class="k">if</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">t</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lessons_t</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
                 <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span>
                 <span class="n">tmp</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">])</span>
             <span class="n">constraint_3_2</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_3_2</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">],</span> <span class="n">tmp</span><span class="p">))</span>
@@ -12643,7 +12655,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[180]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V4.1</span>
@@ -12661,7 +12673,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C4.1</span>
@@ -12681,7 +12693,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[182]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C4.2</span>
@@ -12693,7 +12705,7 @@ div#notebook {
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">):</span> 
             <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_false</span><span class="p">)</span>
             <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="n">y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tsgn</span> <span class="k">if</span> <span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">g</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lessons_g</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
                 <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
                 <span class="n">tmp</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">])</span>
             <span class="n">constraint_4_2</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_4_2</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">],</span> <span class="n">tmp</span><span class="p">))</span>
@@ -12706,16 +12718,19 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[183]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C5.1</span>
 <span class="n">constraint_5_1</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">tmp_true</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">tmp_false</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_false</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
-        <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-        <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-        <span class="n">constraint_5_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_5_1</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">],</span> <span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">]))</span>
+        <span class="n">var_name</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+        <span class="n">tmp</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name</span><span class="p">])</span>
+    <span class="n">constraint_5_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_5_1</span><span class="p">,</span><span class="n">tmp</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12725,7 +12740,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C5.2</span>
@@ -12749,7 +12764,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[185]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C6.1</span>
@@ -12773,7 +12788,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C6.2</span>
@@ -12784,11 +12799,10 @@ div#notebook {
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
         <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_true</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">p1</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">)),</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">-</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span> 
-            <span class="k">for</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">)),</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">-</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">p2</span> <span class="o">&gt;</span> <span class="n">p1</span><span class="p">):</span>
-                    <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span>
-                    <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p2</span><span class="p">)</span>
-                    <span class="n">tmp</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">Or</span><span class="p">(</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">]),</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">])))</span>
+            <span class="k">for</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">p1</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">-</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p1</span><span class="p">)</span>
+                <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p2</span><span class="p">)</span>
+                <span class="n">tmp</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">Or</span><span class="p">(</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">]),</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">])))</span>
         <span class="n">constraint_6_2</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_6_2</span><span class="p">,</span><span class="n">tmp</span><span class="p">)</span>
 </pre></div>
 
@@ -12799,7 +12813,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[187]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C7.1</span>
@@ -12810,14 +12824,15 @@ div#notebook {
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
             <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_true</span><span class="p">)</span>
-            <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tsgn</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-                <span class="k">for</span> <span class="n">xj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">tsgn</span><span class="p">)):</span>
-                    <span class="n">x1</span> <span class="o">=</span> <span class="n">tsgn</span><span class="p">[</span><span class="n">xi</span><span class="p">]</span>
-                    <span class="n">x2</span> <span class="o">=</span> <span class="n">tsgn</span><span class="p">[</span><span class="n">xj</span><span class="p">]</span>
+            <span class="n">lg</span> <span class="o">=</span> <span class="n">lessons_g</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="c1"># Lessons of batch g</span>
+            <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">xj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">xi</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">lg</span><span class="p">)):</span>
+                    <span class="n">x1</span> <span class="o">=</span> <span class="n">lg</span><span class="p">[</span><span class="n">xi</span><span class="p">]</span>
+                    <span class="n">x2</span> <span class="o">=</span> <span class="n">lg</span><span class="p">[</span><span class="n">xj</span><span class="p">]</span>
                     <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
                     <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
                     <span class="n">tmp</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">Or</span><span class="p">(</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">]),</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">])))</span>
-        <span class="n">constraint_7_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_7_1</span><span class="p">,</span><span class="n">tmp</span><span class="p">)</span>
+            <span class="n">constraint_7_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_7_1</span><span class="p">,</span><span class="n">tmp</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12827,7 +12842,36 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[188]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C7.2</span>
+<span class="n">constraint_7_2</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">tmp_true</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">tmp_false</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">faculty_list</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+            <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_true</span><span class="p">)</span>
+            <span class="n">lt</span> <span class="o">=</span> <span class="n">lessons_t</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="c1"># Lessons of teacher t</span>
+            <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lt</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">xj</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">xi</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">lt</span><span class="p">)):</span>
+                    <span class="n">x1</span> <span class="o">=</span> <span class="n">lg</span><span class="p">[</span><span class="n">xi</span><span class="p">]</span>
+                    <span class="n">x2</span> <span class="o">=</span> <span class="n">lg</span><span class="p">[</span><span class="n">xj</span><span class="p">]</span>
+                    <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x1</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+                    <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x2</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+                    <span class="n">tmp</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">Or</span><span class="p">(</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">]),</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">])))</span>
+            <span class="n">constraint_7_2</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_7_2</span><span class="p">,</span><span class="n">tmp</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[189]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This function will take a tuple (t,s,g,n) and return the list of indices of room which is of type st, where st is the room type</span>
@@ -12846,7 +12890,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[190]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rooms</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
@@ -12862,13 +12906,13 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[41]:</div>
+<div class="prompt output_prompt">Out[190]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[0, 1]</pre>
+<pre>[7, 8]</pre>
 </div>
 
 </div>
@@ -12879,7 +12923,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[191]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V5.1</span>
@@ -12898,7 +12942,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[192]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V5.2</span>
@@ -12917,7 +12961,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[193]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C9.1</span>
@@ -12939,7 +12983,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[194]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C9.2</span>
@@ -12965,7 +13009,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[195]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C10.1</span>
@@ -12986,7 +13030,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[196]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C10.3</span>
@@ -13007,7 +13051,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[197]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C10.2</span>
@@ -13032,7 +13076,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[198]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C10.4</span>
@@ -13057,7 +13101,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[199]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># V6</span>
@@ -13076,7 +13120,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[200]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C10.5</span>
@@ -13097,7 +13141,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[201]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C10.6</span>
@@ -13122,7 +13166,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[202]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C11.1</span>
@@ -13148,7 +13192,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[203]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C11.2</span>
@@ -13174,7 +13218,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[204]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C12.1</span>
@@ -13187,12 +13231,14 @@ div#notebook {
             <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_true</span><span class="p">)</span>
             <span class="n">var_name2</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
             <span class="c1"># Get faculties of the course s</span>
-            <span class="n">x_f_list</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-            <span class="n">t_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">faculty_to_index</span><span class="p">[</span><span class="n">fi</span><span class="p">]</span> <span class="k">for</span> <span class="n">fi</span> <span class="ow">in</span> <span class="n">x_f_list</span><span class="p">]</span>
-            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_list</span><span class="p">:</span>
-                <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-                <span class="n">tmp</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">]))</span>
-            <span class="n">constraint_10_4</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_10_4</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">],</span> <span class="n">tmp</span><span class="p">))</span>
+            <span class="n">x_f_list</span> <span class="o">=</span> <span class="n">course_list</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]][</span><span class="mi">3</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_f_list</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">x_f_list</span> <span class="o">=</span> <span class="n">x_f_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+                <span class="n">t_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">faculty_to_index</span><span class="p">[</span><span class="n">fi</span><span class="p">]</span> <span class="k">for</span> <span class="n">fi</span> <span class="ow">in</span> <span class="n">x_f_list</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_list</span><span class="p">:</span>
+                    <span class="n">var_name1</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+                    <span class="n">tmp</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">Not</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name1</span><span class="p">]))</span>
+                <span class="n">constraint_10_4</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_10_4</span><span class="p">,</span><span class="n">Implies</span><span class="p">(</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name2</span><span class="p">],</span> <span class="n">tmp</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -13202,30 +13248,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># C13.1</span>
-<span class="n">constraint_13_1</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">tmp_true</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">tmp_false</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tsgn</span><span class="p">:</span>
-    <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">tmp_false</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">day_list</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">)),</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">periods</span><span class="p">(</span><span class="n">d</span><span class="p">))</span> <span class="o">-</span> <span class="n">duration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-            <span class="n">var_name</span> <span class="o">=</span> <span class="s2">&quot;xdas&quot;</span><span class="o">+</span><span class="s2">&quot;t&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;s&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;g&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;d&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;p&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-            <span class="n">tmp</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">pd</span><span class="p">[</span><span class="n">var_name</span><span class="p">])</span>
-    <span class="n">constraint_13_1</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">constraint_13_1</span><span class="p">,</span><span class="n">tmp</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[205]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ff</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># Final formula</span>
@@ -13244,6 +13267,7 @@ div#notebook {
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_6_1</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_6_2</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_7_1</span><span class="p">)</span>
+<span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_7_2</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_9_1</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_9_2</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_10_1</span><span class="p">)</span>
@@ -13255,20 +13279,8 @@ div#notebook {
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_11_1</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_11_2</span><span class="p">)</span>
 <span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_12_1</span><span class="p">)</span>
-<span class="n">ff</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">constraint_13_1</span><span class="p">)</span>
-</pre></div>
 
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Solving and creating model</span>
+<span class="c1"># Solving and creating model</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">Solver</span><span class="p">()</span>
 <span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ff</span><span class="p">)</span>
 <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">check</span><span class="p">())</span> <span class="o">==</span> <span class="s2">&quot;sat&quot;</span><span class="p">:</span>
@@ -13303,7 +13315,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[206]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">final_timetable</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13324,95 +13336,57 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[207]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">final_timetable</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_course</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_batch</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_day</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_period</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_room</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_teacher</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x_n_th_lecture</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">each_class</span> <span class="ow">in</span> <span class="n">final_timetable</span><span class="p">:</span>
+    <span class="n">indx_t</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">)</span>
+    <span class="n">indx_s</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;s&quot;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">indx_g</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">)</span>
+    <span class="n">indx_n</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
+    <span class="n">indx_d</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;d&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">indx_p</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span>
+    <span class="n">indx_r</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+
+    <span class="n">x_course</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_s</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_g</span><span class="p">]))</span>
+    <span class="n">x_batch</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_g</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_n</span><span class="p">]))</span> 
+    <span class="n">x_day</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_d</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_p</span><span class="p">]))</span>
+    <span class="n">x_period</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_p</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_r</span><span class="p">]))</span>
+    <span class="n">x_room</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_r</span><span class="o">+</span><span class="mi">1</span><span class="p">:]))</span>
+    <span class="n">x_teacher</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_t</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_s</span><span class="p">]))</span>
+    <span class="n">x_n_th_lecture</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_n</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_d</span><span class="p">]))</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;Course&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_course</span><span class="p">),</span>
+    <span class="s1">&#39;Batch&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_batch</span><span class="p">),</span>
+    <span class="s1">&#39;Day&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_day</span><span class="p">),</span>
+    <span class="s1">&#39;Period&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_period</span><span class="p">),</span>
+    <span class="s1">&#39;Room&#39;</span> <span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_room</span><span class="p">),</span>
+    <span class="s1">&#39;Teacher&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_teacher</span><span class="p">),</span>
+    <span class="s1">&#39;n_th_lec&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x_n_th_lecture</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Day&#39;</span><span class="p">,</span> <span class="s1">&#39;Period&#39;</span><span class="p">,</span><span class="s1">&#39;Batch&#39;</span><span class="p">,</span><span class="s1">&#39;Room&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[61]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;xdast1s0g1n2d3p4r1&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">course_list</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[62]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[[&#39;MA105&#39;, &#39;big&#39;, [1, 1, 1, 1], [&#39;Lok\xa0Pati\xa0Tripathi&#39;], 1],
- [&#39;PH107&#39;, &#39;big&#39;, [1, 1, 1], [&#39;Basanta\xa0Nandi&#39;], 1],
- [&#39;CH105&#39;, &#39;small&#39;, [1, 1, 1], [&#39;E. Siva\xa0Subramaniam\xa0I.&#39;], 1],
- [&#39;CH107&#39;,
-  &#39;small&#39;,
-  [1, 1, 1],
-  [&#39;E.\xa0Siva\xa0Subramaniam\xa0I.&#39;, &#39;Rishikesh\xa0Narayan&#39;],
-  1],
- [&#39;CH117&#39;, &#39;chemistry&#39;, [2, 2], [&#39;E.\xa0Siva\xa0Subramaniam\xa0I.&#39;], 1],
- [&#39;CS101&#39;, &#39;computer&#39;, [2, 2, 2], [&#39;Somenath\xa0Biswas&#39;], 1],
- [&#39;NO101&#39;, &#39;ground&#39;, [2, 2], [&#39;Santosh\xa0Upadhyay&#39;], 1],
- [&#39;ENG101&#39;, &#39;big&#39;, [1, 1], [&#39;Nida Sajid&#39;], 1],
- [&#39;CS207&#39;, &#39;big&#39;, [1, 1, 1], [&#39;Amaldev\xa0Manuel&#39;], 2],
- [&#39;HS101&#39;, &#39;small&#39;, [1, 1], [&#39;Sunil Paul&#39;], 2],
- [&#39;EE101&#39;, &#39;big&#39;, [1.5, 1.5], [&#39;T.\xa0S.\xa0Rathore&#39;, &#39;Ramnath Kini&#39;], 2],
- [&#39;CS215&#39;, &#39;big&#39;, [1.5, 1.5], [&#39;Sujit Sahoo&#39;], 2],
- [&#39;CS251&#39;, &#39;computer&#39;, [2], [&#39;Amaldev\xa0Manuel&#39;, &#39;Sreejith\xa0A.V.&#39;], 2],
- [&#39;CS305&#39;, &#39;small&#39;, [1, 1, 1], [&#39;Sharad\xa0Sinha&#39;], 3],
- [&#39;CS341&#39;, &#39;computer&#39;, [2], [&#39;Sharad\xa0Sinha&#39;], 3],
- [&#39;CS344&#39;, &#39;small&#39;, [1, 1, 1], [&#39;Clint\xa0P.\xa0George&#39;], 3],
- [&#39;CS386&#39;, &#39;computer&#39;, [2], [&#39;Clint\xa0P.\xa0George&#39;], 3],
- [&#39;CS228&#39;, &#39;small&#39;, [1, 1, 1], [&#39;Sreejith\xa0A.V.&#39;], 3],
- [&#39;HS301&#39;, &#39;big&#39;, [1, 1], [&#39;Sabiha\xa0Hashami&#39;], 3]]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[208]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">beautifultable</span> <span class="k">import</span> <span class="n">BeautifulTable</span>
@@ -13426,22 +13400,15 @@ div#notebook {
 
 <span class="k">def</span> <span class="nf">final_scheduling_of_entire_timetable</span><span class="p">(</span><span class="n">final_timetable</span><span class="p">):</span>
     
-    <span class="k">for</span> <span class="n">each_class</span> <span class="ow">in</span> <span class="n">final_timetable</span><span class="p">:</span>
-        <span class="n">indx_t</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">)</span>
-        <span class="n">indx_s</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;s&quot;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-        <span class="n">indx_g</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">)</span>
-        <span class="n">indx_n</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
-        <span class="n">indx_d</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;d&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-        <span class="n">indx_p</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span>
-        <span class="n">indx_r</span> <span class="o">=</span> <span class="n">each_class</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     
-        <span class="n">x_teacher</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_t</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_s</span><span class="p">])</span>
-        <span class="n">x_course</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_s</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_g</span><span class="p">])</span>
-        <span class="n">x_batch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_g</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_n</span><span class="p">])</span> 
-        <span class="n">x_n_th_lecture</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_n</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_d</span><span class="p">])</span>
-        <span class="n">x_day</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_d</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_p</span><span class="p">])</span>
-        <span class="n">x_period</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_p</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">indx_r</span><span class="p">])</span>
-        <span class="n">x_room</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">each_class</span><span class="p">[</span><span class="n">indx_r</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+        <span class="n">x_teacher</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Teacher&#39;</span><span class="p">]</span>
+        <span class="n">x_course</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Course&#39;</span><span class="p">]</span>
+        <span class="n">x_batch</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Batch&#39;</span><span class="p">]</span>
+        <span class="n">x_n_th_lecture</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;n_th_lec&#39;</span><span class="p">]</span>
+        <span class="n">x_day</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Day&#39;</span><span class="p">]</span>
+        <span class="n">x_period</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Period&#39;</span><span class="p">]</span>
+        <span class="n">x_room</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;Room&#39;</span><span class="p">]</span>
         
         <span class="n">x_day_To_day</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span><span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">:</span><span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">:</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span><span class="mi">6</span><span class="p">:</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span><span class="mi">7</span><span class="p">:</span><span class="s1">&#39;Thursday&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">:</span><span class="s1">&#39;Thursday&#39;</span><span class="p">,</span><span class="mi">9</span><span class="p">:</span><span class="s1">&#39;Friday&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">:</span><span class="s1">&#39;Friday&#39;</span><span class="p">}</span>
         
@@ -13493,141 +13460,187 @@ div#notebook {
 +--------+-------+-----------+-------------+---------+-------------------------+
 | COURSE | BATCH |    DAY    |    TIME     |  VENUE  |         FACULTY         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| MA105  |   1   |  Monday   | 2:00 pm - 3 |   LH1   |    Lok Pati Tripathi    |
-|        |       |           |   :00 pm    |         |                         |
+| CH107  |   1   |  Monday   | 9:00 am - 1 |   T1    | E. Siva Subramaniam I., |
+|        |       |           |   0:00 am   |         |    Rishikesh Narayan    |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| MA105  |   1   |  Tuesday  | 10:00 am -  |   LH2   |    Lok Pati Tripathi    |
-|        |       |           |  11:00 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| MA105  |   1   |  Monday   | 3:30 pm - 4 |   LH2   |    Lok Pati Tripathi    |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| MA105  |   1   |  Monday   | 2:30 pm - 3 |   LH2   |    Lok Pati Tripathi    |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| PH107  |   1   | Wednesday | 9:00 am - 1 |   LH1   |      Basanta Nandi      |
+| HS301  |   3   |  Monday   | 9:00 am - 1 |   LH2   |     Sabiha Hashami      |
 |        |       |           |   0:00 am   |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| PH107  |   1   | Thursday  | 10:00 am -  |   LH2   |      Basanta Nandi      |
+| HS301  |   3   |  Monday   | 10:00 am -  |   LH1   |     Sabiha Hashami      |
 |        |       |           |  11:00 am   |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| PH107  |   1   | Wednesday | 10:30 am -  |   LH2   |      Basanta Nandi      |
+| CH107  |   1   |  Monday   | 10:30 am -  |   T3    | E. Siva Subramaniam I., |
+|        |       |           |  11:30 am   |         |    Rishikesh Narayan    |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS207  |   2   |  Monday   | 10:30 am -  |   LH1   |     Amaldev Manuel      |
 |        |       |           |  11:30 am   |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| CH105  |   1   | Thursday  | 2:00 pm - 3 |   T1    | E. Siva Subramaniam I.  |
+| CH107  |   1   |  Monday   | 11:30 am -  |   T3    | E. Siva Subramaniam I., |
+|        |       |           |  12:30 pm   |         |    Rishikesh Narayan    |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS101  |   1   |  Monday   | 2:30 pm - 4 | compute |     Somenath Biswas     |
+|        |       |           |   :30 pm    |  r lab  |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| HS101  |   2   |  Monday   | 4:00 pm - 5 |   T2    |       Sunil Paul        |
 |        |       |           |   :00 pm    |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| CH105  |   1   |  Tuesday  | 10:30 am -  |   T3    | E. Siva Subramaniam I.  |
-|        |       |           |  11:30 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CH105  |   1   | Thursday  | 3:30 pm - 4 |   T2    | E. Siva Subramaniam I.  |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CH107  |   1   | Wednesday | 3:30 pm - 4 |   T1    | E. Siva Subramaniam I., |
-|        |       |           |   :30 pm    |         |    Rishikesh Narayan    |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CH107  |   1   | Wednesday | 3:00 pm - 4 |   T3    | E. Siva Subramaniam I., |
-|        |       |           |   :00 pm    |         |    Rishikesh Narayan    |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CH107  |   1   | Wednesday | 2:00 pm - 3 |   T3    | E. Siva Subramaniam I., |
-|        |       |           |   :00 pm    |         |    Rishikesh Narayan    |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CH117  |   1   |  Friday   | 9:00 am - 1 | Chemist | E. Siva Subramaniam I.  |
-|        |       |           |   1:00 am   | ry lab  |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CH117  |   1   |  Friday   | 8:30 am - 1 | Chemist | E. Siva Subramaniam I.  |
+| CH117  |   1   |  Tuesday  | 8:30 am - 1 | Chemist | E. Siva Subramaniam I.  |
 |        |       |           |   0:30 am   | ry lab  |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| CS101  |   1   |  Tuesday  | 2:30 pm - 4 | compute |     Somenath Biswas     |
-|        |       |           |   :30 pm    |  r lab  |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS101  |   1   |  Friday   | 2:30 pm - 4 | compute |     Somenath Biswas     |
-|        |       |           |   :30 pm    |  r lab  |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS101  |   1   | Wednesday | 9:30 am - 1 | compute |     Somenath Biswas     |
-|        |       |           |   1:30 am   |  r lab  |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| NO101  |   1   | Wednesday | 10:00 am -  | ground  |    Santosh Upadhyay     |
-|        |       |           |  12:00 pm   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| NO101  |   1   | Thursday  | 10:00 am -  | ground  |    Santosh Upadhyay     |
-|        |       |           |  12:00 pm   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| ENG101 |   1   |  Monday   | 10:00 am -  |   LH1   |       Nida Sajid        |
-|        |       |           |  11:00 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| ENG101 |   1   |  Monday   | 8:30 am - 9 |   LH2   |       Nida Sajid        |
-|        |       |           |   :30 am    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS207  |   2   | Thursday  | 10:30 am -  |   LH1   |     Amaldev Manuel      |
-|        |       |           |  11:30 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS207  |   2   |  Monday   | 3:30 pm - 4 |   LH1   |     Amaldev Manuel      |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS207  |   2   |  Tuesday  | 11:00 am -  |   LH1   |     Amaldev Manuel      |
-|        |       |           |  12:00 pm   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| HS101  |   2   |  Monday   | 10:00 am -  |   T2    |       Sunil Paul        |
-|        |       |           |  11:00 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| HS101  |   2   |  Tuesday  | 3:30 pm - 4 |   T1    |       Sunil Paul        |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| EE101  |   2   | Wednesday | 9:30 am - 1 |   LH2   | T. S. Rathore,Ramnath K |
+| EE101  |   2   |  Tuesday  | 9:30 am - 1 |   LH1   | T. S. Rathore,Ramnath K |
 |        |       |           |   1:00 am   |         |           ini           |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| EE101  |   2   | Wednesday | 9:00 am - 1 |   LH1   | T. S. Rathore,Ramnath K |
-|        |       |           |   0:30 am   |         |           ini           |
+| CH117  |   1   |  Tuesday  | 10:30 am -  | Chemist | E. Siva Subramaniam I.  |
+|        |       |           |  12:30 pm   | ry lab  |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| CS215  |   2   |  Friday   | 3:00 pm - 4 |   LH2   |       Sujit Sahoo       |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS215  |   2   | Thursday  | 3:00 pm - 4 |   LH2   |       Sujit Sahoo       |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS251  |   2   |  Tuesday  | 9:00 am - 1 | compute | Amaldev Manuel,Sreejith |
-|        |       |           |   1:00 am   |  r lab  |           A.V.          |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS305  |   3   | Thursday  | 3:30 pm - 4 |   T1    |      Sharad Sinha       |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS305  |   3   |  Tuesday  | 11:00 am -  |   T2    |      Sharad Sinha       |
-|        |       |           |  12:00 pm   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS305  |   3   |  Tuesday  | 10:00 am -  |   T2    |      Sharad Sinha       |
-|        |       |           |  11:00 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS341  |   3   |  Tuesday  | 10:00 am -  | compute |      Sharad Sinha       |
-|        |       |           |  12:00 pm   |  r lab  |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS344  |   3   |  Monday   | 9:30 am - 1 |   T3    |     Clint P. George     |
-|        |       |           |   0:30 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS344  |   3   |  Monday   | 10:00 am -  |   T3    |     Clint P. George     |
-|        |       |           |  11:00 am   |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS344  |   3   |  Monday   | 3:30 pm - 4 |   T1    |     Clint P. George     |
-|        |       |           |   :30 pm    |         |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS386  |   3   |  Tuesday  | 9:00 am - 1 | compute |     Clint P. George     |
-|        |       |           |   1:00 am   |  r lab  |                         |
-+--------+-------+-----------+-------------+---------+-------------------------+
-| CS228  |   3   | Thursday  | 10:30 am -  |   T2    |      Sreejith A.V.      |
+| CS228  |   3   |  Tuesday  | 10:30 am -  |   T1    |      Sreejith A.V.      |
 |        |       |           |  11:30 am   |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| CS228  |   3   | Thursday  | 9:30 am - 1 |   T2    |      Sreejith A.V.      |
-|        |       |           |   0:30 am   |         |                         |
+| EE101  |   2   |  Tuesday  | 11:00 am -  |   LH1   | T. S. Rathore,Ramnath K |
+|        |       |           |  12:30 pm   |         |           ini           |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| CS228  |   3   |  Tuesday  | 3:30 pm - 4 |   T2    |      Sreejith A.V.      |
-|        |       |           |   :30 pm    |         |                         |
+| CS228  |   3   |  Tuesday  | 11:30 am -  |   T1    |      Sreejith A.V.      |
+|        |       |           |  12:30 pm   |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| HS301  |   3   |  Friday   | 8:30 am - 9 |   LH1   |     Sabiha Hashami      |
+| ENG101 |   1   |  Tuesday  | 3:00 pm - 4 |   LH1   |       Nida Sajid        |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS386  |   3   |  Tuesday  | 3:00 pm - 5 | compute |     Clint P. George     |
+|        |       |           |   :00 pm    |  r lab  |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| ENG101 |   1   |  Tuesday  | 4:00 pm - 5 |   LH1   |       Nida Sajid        |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| HS101  |   2   |  Tuesday  | 4:00 pm - 5 |   T1    |       Sunil Paul        |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS101  |   1   | Wednesday | 8:30 am - 1 | compute |     Somenath Biswas     |
+|        |       |           |   0:30 am   |  r lab  |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS305  |   3   | Wednesday | 8:30 am - 9 |   T1    |      Sharad Sinha       |
 |        |       |           |   :30 am    |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
-| HS301  |   3   |  Friday   | 10:30 am -  |   LH2   |     Sabiha Hashami      |
+| CS305  |   3   | Wednesday | 10:00 am -  |   T2    |      Sharad Sinha       |
+|        |       |           |  11:00 am   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS101  |   1   | Wednesday | 10:30 am -  | compute |     Somenath Biswas     |
+|        |       |           |  12:30 pm   |  r lab  |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| MA105  |   1   | Wednesday | 2:00 pm - 3 |   LH2   |    Lok Pati Tripathi    |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS207  |   2   | Wednesday | 2:00 pm - 3 |   LH1   |     Amaldev Manuel      |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS341  |   3   | Wednesday | 3:00 pm - 5 | compute |      Sharad Sinha       |
+|        |       |           |   :00 pm    |  r lab  |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| MA105  |   1   | Wednesday | 3:30 pm - 4 |   LH2   |    Lok Pati Tripathi    |
+|        |       |           |   :30 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS207  |   2   | Wednesday | 3:30 pm - 4 |   LH2   |     Amaldev Manuel      |
+|        |       |           |   :30 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS215  |   2   | Thursday  | 8:30 am - 1 |   LH2   |       Sujit Sahoo       |
+|        |       |           |   0:00 am   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CH105  |   1   | Thursday  | 9:00 am - 1 |   T1    | E. Siva Subramaniam I.  |
+|        |       |           |   0:00 am   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CH105  |   1   | Thursday  | 10:00 am -  |   T1    | E. Siva Subramaniam I.  |
+|        |       |           |  11:00 am   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS215  |   2   | Thursday  | 10:00 am -  |   LH1   |       Sujit Sahoo       |
 |        |       |           |  11:30 am   |         |                         |
 +--------+-------+-----------+-------------+---------+-------------------------+
+| CS228  |   3   | Thursday  | 10:30 am -  |   T3    |      Sreejith A.V.      |
+|        |       |           |  11:30 am   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CH105  |   1   | Thursday  | 11:00 am -  |   T1    | E. Siva Subramaniam I.  |
+|        |       |           |  12:00 pm   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| MA105  |   1   | Thursday  | 2:00 pm - 3 |   LH2   |    Lok Pati Tripathi    |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS344  |   3   | Thursday  | 2:00 pm - 3 |   T2    |     Clint P. George     |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS344  |   3   | Thursday  | 3:00 pm - 4 |   T3    |     Clint P. George     |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| MA105  |   1   | Thursday  | 4:00 pm - 5 |   LH1   |    Lok Pati Tripathi    |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS344  |   3   | Thursday  | 4:00 pm - 5 |   T3    |     Clint P. George     |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| NO101  |   1   |  Friday   | 8:30 am - 1 | ground  |    Santosh Upadhyay     |
+|        |       |           |   0:30 am   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS251  |   2   |  Friday   | 10:00 am -  | compute | Amaldev Manuel,Sreejith |
+|        |       |           |  12:00 pm   |  r lab  |           A.V.          |
++--------+-------+-----------+-------------+---------+-------------------------+
+| NO101  |   1   |  Friday   | 10:30 am -  | ground  |    Santosh Upadhyay     |
+|        |       |           |  12:30 pm   |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| PH107  |   1   |  Friday   | 2:00 pm - 3 |   LH2   |      Basanta Nandi      |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| PH107  |   1   |  Friday   | 3:00 pm - 4 |   LH2   |      Basanta Nandi      |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| PH107  |   1   |  Friday   | 4:00 pm - 5 |   LH1   |      Basanta Nandi      |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+| CS305  |   3   |  Friday   | 4:00 pm - 5 |   T3    |      Sharad Sinha       |
+|        |       |           |   :00 pm    |         |                         |
++--------+-------+-----------+-------------+---------+-------------------------+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[209]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;timeTable.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">******************************** FINAL TIMETABLE SCHEDULED *******************************</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">timeTable</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[210]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Execution Time :&quot;</span><span class="p">,</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time_of_program</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Execution Time : 64.9875853061676
 </pre>
 </div>
 </div>
